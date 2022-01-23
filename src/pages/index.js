@@ -1,4 +1,4 @@
-import Home from './Home'
-import Splash from './Splash'
+import HomeScreen from './Home';
+import SplashScreen from './Splash';
 
-export { Home, Splash }
+export { HomeScreen, SplashScreen } ;

@@ -1,5 +1,3 @@
-import Logo from './logo.svg';
-import Ilustrasi from './ilustrasi.js';
+import Logo from './Logo.svg';
 
-
-export { Logo, Ilustrasi }
+export {Logo};

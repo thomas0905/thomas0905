@@ -1,23 +1,15 @@
 import React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Home,  Splash } from '../pages';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {HomeScreen, SplashScreen} from '../pages';
 
-const stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const Router = () => {
   return (
-      <stack.Navigator  initialRouteName='Splash'>
-           <stack.Screen
-              name="Splash"
-              component={Splash}
-              options={{headerShown: false}}
-            />
-            <stack.Screen
-             name="Home" 
-             component={Home} 
-             options={{headerShown:false}}/>
-        
-      </stack.Navigator>
+    <Stack.Navigator initialRouteName="SplashScreen">
+      <Stack.Screen name="Splash" component={SplashScreen} />
+      <Stack.Screen name="Home" component={HomeScreen} />
+    </Stack.Navigator>
   );
 };
 
