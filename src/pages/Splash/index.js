@@ -1,12 +1,16 @@
 import {Text, StyleSheet, View} from 'react-native';
 import React, {Component} from 'react';
-import {Logo, Ilustration} from '../../assets';
+import {Logo, Ilustrasi} from '../../assets';
 
 export default class Splash extends Component {
   render() {
     return (
       <View style={styles.pages}>
-        <Logo/>
+        <Logo />
+        <View style={styles.ilustrasi}>
+          <Ilustrasi />
+        </View>
+
         {/* <Ilustration/> */}
       </View>
     );
@@ -14,5 +18,6 @@ export default class Splash extends Component {
 }
 
 const styles = StyleSheet.create({
-  pages:{flex: 1, alignItems: 'center', justifyContent: 'center'}
+  pages: {flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white'},
+  ilustrasi: {position: 'absolute', bottom: 0, right: 0},
 });
