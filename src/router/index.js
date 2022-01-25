@@ -2,7 +2,7 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {HomeScreen, SplashScreen, ListJerseyScreen, ProfileScreen} from '../pages';
-import {BottomNavigator }from '../components';
+import { BottomNavigator }from '../components';
 
 const Stack = createNativeStackNavigator();
 
