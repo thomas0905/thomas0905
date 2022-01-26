@@ -5,9 +5,6 @@ import {HomeScreen, SplashScreen, ListJerseyScreen, ProfileScreen} from '../page
 import { BottomNavigator }from '../components';
 
 const Stack = createNativeStackNavigator();
-
-
-
 const Tab = createBottomTabNavigator();
 
 const MainApp= () => {
