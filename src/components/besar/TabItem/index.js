@@ -1,12 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {
-  IconJersey,
-  IconJerseyAktif,
-  IconProfile,
-  IconProfileAktif,
   IconHome,
   IconHomeAktif,
+  IconJerseyAktif,
+  IconJersey,
+  IconProfileAktif,
+  IconProfile,
+
 } from '../../../assets';
 
 import {color} from '../../../utils';
@@ -17,13 +18,19 @@ const TabItem = ({isFocused, onLongPress, onPress, label}) => {
       return isFocused ? <IconHomeAktif /> : <IconHome />;
     }
 
+    
     if (label === "Jersey") {
       return isFocused ? <IconJerseyAktif /> : <IconJersey />;
     }
 
+
     if (label === "Profile") {
       return isFocused ? <IconProfileAktif /> : <IconProfile />;
     }
+
+
+
+   
 
     return <IconHome />;
   };
@@ -44,8 +51,8 @@ export default TabItem;
 
 const styles = StyleSheet.create({
     container:{
-      alignItem :'center',
-      flex: 1
+     alignItems :'center',
+     flex: 1
     },
     Text: (isFocused) => ({
     color: isFocused ? color.white : color.secondary,
