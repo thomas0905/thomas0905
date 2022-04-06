@@ -4,15 +4,15 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {HomeScreen, SplashScreen, ListJerseyScreen, ProfileScreen} from '../pages';
 import { BottomNavigator }from '../components';
 
-const Stack = createNativeStackNavigator();
+ const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const MainApp= () => {
   return (
     <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
-      <Tab.Screen name="Home" component={HomeScreen}  />
-      <Tab.Screen name="ListJersey" component={ListJerseyScreen} options={{ title: 'Jersey'}} />
-      <Tab.Screen name="Profil" component={ProfileScreen} />
+      <Tab.Screen name="Home" component={HomeScreen}   options={{headerShown:false}}/>
+      <Tab.Screen name="ListJersey" component={ListJerseyScreen} options={{ title: 'Jersey', headerShown:false}} />
+      <Tab.Screen name="Profil" component={ProfileScreen}  options={{headerShown:false}} />
     </Tab.Navigator>
   );
 }
